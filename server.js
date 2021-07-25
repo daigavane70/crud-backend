@@ -21,6 +21,6 @@ app.use("/api/user", userRoutes);
 
 //listen to PORT
 const PORT = 5000 || process.env.PORT;
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`server started at ${PORT}`);
 });
